@@ -1,0 +1,57 @@
+h1, h2, h3, h4, h5, h6, div, body, img, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: '微软雅黑'
+}
+
+body {
+    background-color: #DEDEDE;
+}
+
+.header, .footer {
+    background-color: #333333;
+}
+
+.header {
+    height: 60px;
+}
+
+.header img {
+    width: 117px;
+    height: 38px;
+    margin: 10px auto auto 40px;
+}
+
+.header a {
+    color: #FFFFFF;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+.header ul {
+    display: inline-block;
+    float: right;
+    margin: 22px 21px;
+}
+
+.header li {
+    float: left;
+    margin-right: 25px;
+}
+
+.header li:last-of-type {
+    color: #A7A7A7;
+    margin-right: 0px;
+}
+
+.footer {
+    height: 70px;
+}
+
+.footer div {
+    color: #FFFFFF;
+    margin: 0 auto auto auto;
+}
