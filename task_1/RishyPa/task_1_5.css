@@ -1,0 +1,256 @@
+h1, h2, h3, h4, h5, h6, div, body, img, ul, li, table, th, td, tr, tbody, thead, tfoot, figure, figcaption {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+* {
+    font-family: '微软雅黑'
+}
+
+.container {
+    background-color: #DEDEDE;
+    margin: 0 auto auto auto;
+    /*width: 1280px;*/
+    width: 100%;
+}
+
+.article-content {
+    width: 100%;
+    padding-right: -20%;
+    position: absolute;
+}
+
+header, footer {
+    overflow:auto;
+}
+
+header {
+    width: 100%;
+    min-width: 640px;
+    height: 65px;
+    background-color: #333333;
+}
+
+header img {
+    width: 117px;
+    height: 38px;
+    margin: 10px auto auto 40px;
+}
+
+header a {
+    color: #FFFFFF;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+header ul {
+    /*display: inline-block;*/
+    float: right;
+    margin: 22px 21px auto auto;
+    /*vertical-align: middle;*/
+}
+
+header li {
+    float: left;
+    margin-right: 25px;
+}
+
+header li:last-child {
+    margin-right: 0px;
+}
+
+header li:last-child a {
+    color: #A7A7A7;
+}
+
+footer {
+    width: 100%;
+    height: 70px;
+    background-color: #000000;
+}
+
+footer div {
+    color: #FFFFFF;
+    text-align:center;
+    font-size: 10px;
+    line-height: 60px;
+}
+
+article {
+    font-size: 14px;
+    line-height: 26px;
+    /*width: 80%;*/
+    margin: 20px 20px auto 20px;
+}
+
+article:last-of-type {
+    margin-bottom: 20px;
+}
+
+article h1 {
+    font-size: 20px;
+}
+
+article h2 {
+    font-size: 14px;
+    color: #666666;
+    margin: 24px auto 3px 0;
+}
+
+article .article-info {
+    height: 17px;
+}
+
+article .author {
+    font-size: 10px;
+    color: #666666;
+}
+
+article .send-time {
+    font-size: 10px;
+    color: #666666;
+}
+
+article .body-text {
+    text-indent: 2em;
+}
+
+article .article-body {
+    background-color: #FFFFFF;
+    border: 1px solid #cfcfcf;
+    box-shadow: 2px 2px 1px 0px #888;
+    padding: 40px 30px 40px 20px;
+    overflow:auto;
+}
+
+article .none-list {
+    list-style: none;
+    margin-top: 21px;
+    margin-left: 21px;
+}
+
+article .pic-wall {
+    margin-top: 1.5em;
+    text-align: center;
+}
+
+article .picbox {
+    width: 120px;
+    border: 1px solid #C5C5C5;
+    margin-top: 22px;
+    margin-left: 22px;
+    float: left;
+}
+
+article .picbox img {
+    max-width: 85%;
+}
+
+article .picbox .pic-title {
+    display: block;
+    font-size: 10px;
+    height: 33px;
+    line-height: 33px;
+}
+
+article table {
+    font-size: 12px;
+    line-height: 24px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+article th {
+    color: #FFFFFF;
+    background-color: #333333;
+    border-color: #DFDFDF;
+}
+
+article th {
+    height: 24px;
+    border: 1px solid #7C7C7C;
+}
+
+article td {
+    height: 24px;
+    border: 1px solid #CCCCCC;
+    padding-left: 5px;
+}
+
+article tfoot td {
+    font-weight: bold;
+    background-color: #CCCCCC;
+}
+
+article table .content {
+    width: 40%;
+}
+
+article .order {
+    font-weight: bold;
+}
+
+aside {
+
+    font-size: 14px;
+    line-height: 26px;
+    width: 363px;
+    margin: 20px 20px 20px auto;
+    background-color: #FFFFFF;
+    border: 1px solid #cfcfcf;
+    box-shadow: 2px 2px 1px 0px #888;
+    padding: 20px 30px 40px 20px;
+    overflow:auto;
+    position: absolute;
+}
+
+aside h1 {
+    height: 42px;
+    font-size: 16px;
+    border-left: 4px solid #CACACA;
+    padding-left: 12px;
+    line-height: 42px;
+}
+
+aside form div {
+    margin-top: 15px;
+}
+
+aside form>div {
+    margin-left: 4%;
+}
+
+aside form label {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    vertical-align: top;
+    margin-right: 20px;
+}
+
+aside form .error-tip {
+    color: #969696;
+    margin-left: 125px;
+}
+
+aside form textarea {
+    width: 62%;
+    height: 100px;
+}
+
+aside form .submit {
+    margin-left: 0px;
+    text-align: center;
+}
+
+aside form .btn-submit {
+    width: 99%;
+    height: 46px;
+    border: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    cursor:pointer;
+    background-color: #4664E3;
+    border-radius: 15px;
+}
