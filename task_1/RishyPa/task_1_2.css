@@ -8,60 +8,78 @@ h1, h2, h3, h4, h5, h6, div, body, img, ul, li, table, th, td, tr, tbody, thead,
     font-family: '微软雅黑'
 }
 
-body {
+.container {
     background-color: #DEDEDE;
     margin: 0 auto auto auto;
-    width: 1280px;
+    /*width: 1280px;*/
+    width: 100%;
 }
 
-.header, .footer {
+header, footer {
+    overflow:auto;
+}
+
+header {
+    width: 100%;
+    min-width: 640px;
+    height: 65px;
     background-color: #333333;
 }
 
-.header {
-    height: 60px;
-}
-
-.header img {
+header img {
     width: 117px;
     height: 38px;
     margin: 10px auto auto 40px;
 }
 
-.header a {
+header a {
     color: #FFFFFF;
     font-size: 10px;
     text-decoration: none;
 }
 
-.header ul {
-    display: inline-block;
+header ul {
+    /*display: inline-block;*/
     float: right;
-    margin: 22px 21px;
+    margin: 22px 21px auto auto;
+    /*vertical-align: middle;*/
 }
 
-.header li {
+header li {
     float: left;
     margin-right: 25px;
 }
 
-.header li:last-of-type {
-    color: #A7A7A7;
+header li:last-child {
     margin-right: 0px;
 }
 
-.footer {
-    height: 70px;
+header li:last-child a {
+    color: #A7A7A7;
 }
 
-.footer div {
+footer {
+    width: 100%;
+    height: 70px;
+    background-color: #000000;
+}
+
+footer div {
     color: #FFFFFF;
-    margin: 0 auto auto auto;
+    text-align:center;
+    font-size: 10px;
+    line-height: 60px;
 }
 
 article {
-    width: 1240px;
+    font-size: 14px;
+    line-height: 26px;
+    /*width: 80%;*/
     margin: 20px 20px auto 20px;
+}
+
+article:last-of-type {
+    margin-bottom: 20px;
 }
 
 article h1 {
@@ -71,6 +89,11 @@ article h1 {
 article h2 {
     font-size: 14px;
     color: #666666;
+    margin: 24px auto 3px 0;
+}
+
+article .article-info {
+    height: 17px;
 }
 
 article .author {
@@ -92,25 +115,123 @@ article .article-body {
     border: 1px solid #cfcfcf;
     box-shadow: 2px 2px 1px 0px #888;
     padding: 40px 30px 40px 20px;
+    overflow:auto;
+}
+
+article .none-list {
+    list-style: none;
+    margin-top: 21px;
+    margin-left: 21px;
+}
+
+article .pic-wall {
+    margin: 1.5em auto auto 3em;
+    text-align: center;
+}
+
+article .picbox {
+    width: 120px;
+    /*height: 124px;*/
+    border: 1px solid #C5C5C5;
+    margin-top: 22px;
+    margin-left: 22px;
+    /*float: left;*/
+}
+
+article .picbox img {
+    max-width: 85%;
+    /*width: 83%;*/
+    /*margin-left: 10px;
+    margin-bottom: 10px;*/
+}
+
+article .picbox .pic-title {
+    display: block;
+    font-size: 10px;
+    height: 33px;
+    line-height: 33px;
 }
 
 article table {
-    font-size: 14px;
-    width: 1200px;
+    font-size: 12px;
+    line-height: 24px;
+    width: 100%;
     border-collapse: collapse;
 }
 
 article th {
     color: #FFFFFF;
-    background-color: #000000;
+    background-color: #333333;
     border-color: #DFDFDF;
 }
 
-article th, article td {
+article th {
     height: 24px;
-    border: 1px solid #DFDFDF;
+    border: 1px solid #7C7C7C;
+}
+
+article td {
+    height: 24px;
+    border: 1px solid #CCCCCC;
+    padding-left: 5px;
+}
+
+article tfoot td {
+    font-weight: bold;
+    background-color: #CCCCCC;
 }
 
 article table .content {
     width: 40%;
+}
+
+article .order {
+    font-weight: bold;
+}
+
+aside {
+    font-size: 14px;
+    line-height: 26px;
+    /*width: 80%;*/
+    margin: 20px 20px 20px 20px;
+    background-color: #FFFFFF;
+    border: 1px solid #cfcfcf;
+    box-shadow: 2px 2px 1px 0px #888;
+    padding: 20px 30px 40px 20px;
+    overflow:auto;
+}
+
+aside h1 {
+    height: 42px;
+    font-size: 16px;
+    border-left: 4px solid #CACACA;
+    padding-left: 12px;
+    line-height: 42px;
+}
+
+aside form label {
+    margin-left: 35%;
+    text-align: right;
+}
+
+aside form .error-tip {
+    margin-left: 35%;
+    margin-right: 20px;
+    padding: 20px;
+}
+
+aside form .submit {
+    text-align: center;
+}
+
+aside form .btn-submit {
+    width: 99%;
+    height: 46px;
+    border: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    cursor:pointer;
+    background-color: #4664E3;
+    margin: auto auto auto auto;
+    border-radius: 15px;
 }
