@@ -209,18 +209,34 @@ aside h1 {
     line-height: 42px;
 }
 
+aside form div {
+    margin-top: 15px;
+}
+
+aside form>div {
+    margin-left: 20%;
+}
+
 aside form label {
-    margin-left: 35%;
+    display: inline-block;
+    width: 100px;
     text-align: right;
+    vertical-align: top;
+    margin-right: 20px;
 }
 
 aside form .error-tip {
-    margin-left: 35%;
-    margin-right: 20px;
-    padding: 20px;
+    color: #969696;
+    margin-left: 125px;
+}
+
+aside form textarea {
+    width: 80%;
+    height: 100px;
 }
 
 aside form .submit {
+    margin-left: 0px;
     text-align: center;
 }
 
@@ -232,6 +248,5 @@ aside form .btn-submit {
     font-size: 16px;
     cursor:pointer;
     background-color: #4664E3;
-    margin: auto auto auto auto;
     border-radius: 15px;
 }
