@@ -15,14 +15,17 @@ h1, h2, h3, h4, h5, h6, div, body, img, ul, li, table, th, td, tr, tbody, thead,
     width: 100%;
 }
 
+.content {
+    min-width: 400px;
+}
+
 .article-content {
-    width: 100%;
-    padding-right: -20%;
-    position: absolute;
+    margin-right: 418px;
 }
 
 header, footer {
     overflow:auto;
+    zoom: 1;
 }
 
 header {
@@ -183,7 +186,7 @@ article tfoot td {
     background-color: #CCCCCC;
 }
 
-article table .content {
+article table .tbl-content {
     width: 40%;
 }
 
@@ -192,17 +195,20 @@ article .order {
 }
 
 aside {
-
+    /*float: right;   */
+    position: absolute;
+    top: 65px;
+    right: 0px;
     font-size: 14px;
     line-height: 26px;
-    width: 363px;
-    margin: 20px 20px 20px auto;
+    width: 348px;
+    margin: 20px 20px 20px 0px;
     background-color: #FFFFFF;
     border: 1px solid #cfcfcf;
     box-shadow: 2px 2px 1px 0px #888;
-    padding: 20px 30px 40px 20px;
+    padding: 20px 23px 40px 22px;
     overflow:auto;
-    position: absolute;
+    zoom: 1;
 }
 
 aside h1 {
@@ -226,16 +232,16 @@ aside form label {
     width: 100px;
     text-align: right;
     vertical-align: top;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 aside form .error-tip {
     color: #969696;
-    margin-left: 125px;
+    margin-left: 115px;
 }
 
 aside form textarea {
-    width: 62%;
+    width: 60%;
     height: 100px;
 }
 
